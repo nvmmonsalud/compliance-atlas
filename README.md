@@ -91,8 +91,13 @@ All endpoints CORS-open. No auth. No rate limit. By design.
 
 ## Live demo
 
-- **Landing page**: <https://compliance-atlas.onrender.com>
-- **API**: <https://compliance-atlas.onrender.com/api/summary>
+- **Repo**: <https://github.com/nvmmonsalud/compliance-atlas>
+- **API example**: `curl https://compliance-atlas.onrender.com/api/summary`
+
+> Deploy via Render: import this repo, Render auto-detects `render.yaml` and deploys in ~2 minutes.
+> Or click the button below (replace `YOUR_RENDER_SUBDOMAIN` after first deploy):
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/nvmmonsalud/compliance-atlas)
 
 ## License
 
