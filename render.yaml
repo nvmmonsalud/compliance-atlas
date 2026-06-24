@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: compliance-atlas
+    env: python
+    plan: free
+    # Build command runs the curator against the bundled sample feed
+    # (Replace with the real feed URL when going to production)
+    buildCommand: "cp -n data/sample-feed.jsonl data/regulatory-feed.jsonl 2>/dev/null || true; python curate.py"
+    startCommand: "gunicorn api_combined:app --bind 0.0.0.0:$PORT"
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"

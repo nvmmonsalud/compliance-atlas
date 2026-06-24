@@ -1,0 +1,18 @@
+{
+  "sectors": [
+    {
+      "sector": "crypto",
+      "count": 30,
+      "critical": 12,
+      "share": 0.508
+    },
+    {
+      "sector": "fintech",
+      "count": 56,
+      "critical": 16,
+      "share": 0.949
+    }
+  ],
+  "count": 2,
+  "generated_at": "2026-06-24T02:11:01.115070Z"
+}

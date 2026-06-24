@@ -1,0 +1,152 @@
+{
+  "conflicts": [
+    {
+      "id": "conflict-01",
+      "topic": "AI Governance",
+      "description": "US (OSTP) requires pre-deployment impact assessments for frontier AI, while EU (AI Act) requires conformity assessments with different scope. Companies face parallel compliance regimes.",
+      "jurisdictions": [
+        "us-federal",
+        "eu"
+      ],
+      "severity": "high",
+      "anchor_findings": [
+        {
+          "id": "us-senate-2026-05-09-clarity-act-vote",
+          "jurisdiction": "us-federal",
+          "title": "US Senate Banking Committee to Consider Clarity Act Crypto Bill in Week of May 1"
+        },
+        {
+          "id": "esma-2026-07-01statementontheend",
+          "jurisdiction": "eu",
+          "title": "Statement on the end of transitional periods under MiCA"
+        }
+      ]
+    },
+    {
+      "id": "conflict-02",
+      "topic": "Crypto Market Structure",
+      "description": "US (Clarity Act proposed) would bifurcate SEC/CFTC oversight of digital assets. EU (MiCA) treats most crypto-assets as e-money or financial instruments. Cross-border listing rules diverge.",
+      "jurisdictions": [
+        "us-federal",
+        "eu",
+        "uk",
+        "sg"
+      ],
+      "severity": "high",
+      "anchor_findings": [
+        {
+          "id": "us-senate-2026-05-09-clarity-act-vote",
+          "jurisdiction": "us-federal",
+          "title": "US Senate Banking Committee to Consider Clarity Act Crypto Bill in Week of May 1"
+        },
+        {
+          "id": "esma-2026-07-01statementontheend",
+          "jurisdiction": "eu",
+          "title": "Statement on the end of transitional periods under MiCA"
+        },
+        {
+          "id": "UK-2026-05-45cf3f7acff4",
+          "jurisdiction": "uk",
+          "title": "Three arrested in FCA investigation into suspected unlawful financial promotions"
+        },
+        {
+          "id": "sg-mas-2026-05-07-sfa-amendment-bill",
+          "jurisdiction": "sg",
+          "title": "Singapore Parliament Passes Securities and Futures (Amendment) Bill for Global L"
+        }
+      ]
+    },
+    {
+      "id": "conflict-03",
+      "topic": "Data Residency",
+      "description": "EU (GDPR + Data Act) restricts cross-border data transfer without adequacy decision. UK has separate adequacy regime post-Brexit. Singapore PDPA is more permissive. Multi-region operations require layered controls.",
+      "jurisdictions": [
+        "eu",
+        "uk",
+        "sg"
+      ],
+      "severity": "high",
+      "anchor_findings": [
+        {
+          "id": "esma-2026-07-01statementontheend",
+          "jurisdiction": "eu",
+          "title": "Statement on the end of transitional periods under MiCA"
+        },
+        {
+          "id": "UK-2026-05-45cf3f7acff4",
+          "jurisdiction": "uk",
+          "title": "Three arrested in FCA investigation into suspected unlawful financial promotions"
+        },
+        {
+          "id": "sg-mas-2026-05-07-sfa-amendment-bill",
+          "jurisdiction": "sg",
+          "title": "Singapore Parliament Passes Securities and Futures (Amendment) Bill for Global L"
+        }
+      ]
+    },
+    {
+      "id": "conflict-04",
+      "topic": "Stablecoin Reserves",
+      "description": "US (proposed GENIUS Act) requires 1:1 reserve in cash/T-bills with monthly attestations. EU (MiCA Title III) requires authorization and segregation of reserves. Japan allows trust-based reserves with FSA approval.",
+      "jurisdictions": [
+        "us-federal",
+        "eu",
+        "japan"
+      ],
+      "severity": "high",
+      "anchor_findings": [
+        {
+          "id": "us-senate-2026-05-09-clarity-act-vote",
+          "jurisdiction": "us-federal",
+          "title": "US Senate Banking Committee to Consider Clarity Act Crypto Bill in Week of May 1"
+        },
+        {
+          "id": "esma-2026-07-01statementontheend",
+          "jurisdiction": "eu",
+          "title": "Statement on the end of transitional periods under MiCA"
+        },
+        {
+          "id": null,
+          "jurisdiction": "japan",
+          "title": "Japan FSA Tells Real Estate and Crypto Sectors to Tighten AML Checks on Property"
+        }
+      ]
+    },
+    {
+      "id": "conflict-05",
+      "topic": "Open Banking",
+      "description": "UK (CMA Order) mandates bank-to-TPP data sharing with standardized APIs. EU (PSD2 + PSR) extends this to include payments initiation. Singapore (MAS) has framework but no mandate. US has no federal equivalent; CFPB \u00a71033 rule in progress.",
+      "jurisdictions": [
+        "uk",
+        "eu",
+        "sg",
+        "us-federal"
+      ],
+      "severity": "high",
+      "anchor_findings": [
+        {
+          "id": "UK-2026-05-45cf3f7acff4",
+          "jurisdiction": "uk",
+          "title": "Three arrested in FCA investigation into suspected unlawful financial promotions"
+        },
+        {
+          "id": "esma-2026-07-01statementontheend",
+          "jurisdiction": "eu",
+          "title": "Statement on the end of transitional periods under MiCA"
+        },
+        {
+          "id": "sg-mas-2026-05-07-sfa-amendment-bill",
+          "jurisdiction": "sg",
+          "title": "Singapore Parliament Passes Securities and Futures (Amendment) Bill for Global L"
+        },
+        {
+          "id": "us-senate-2026-05-09-clarity-act-vote",
+          "jurisdiction": "us-federal",
+          "title": "US Senate Banking Committee to Consider Clarity Act Crypto Bill in Week of May 1"
+        }
+      ]
+    }
+  ],
+  "count": 5,
+  "generated_at": "2026-06-24T02:11:01.115070Z"
+}

@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Compliance Atlas — Real-time regulatory monitoring that actually works</title>
+<meta name="description" content="5,490 regulatory findings. 28 jurisdictions. One screen. Real-time monitoring built by one operator and an agent swarm." />
+<meta property="og:title" content="Compliance Atlas — One screen, 5 jurisdictions, 190 curated findings" />
+<meta property="og:description" content="Real-time regulatory monitoring that actually works. No team of 50. No enterprise SaaS." />
+<meta property="og:image" content="og.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="og.png" />
+<meta name="theme-color" content="#0a0e1a" />
+<style>
+:root {
+  --bg: #0a0e1a;
+  --bg-elev: #131829;
+  --bg-card: #1a1f33;
+  --fg: #e6e9ef;
+  --fg-dim: #94a3b8;
+  --accent: #10b981;
+  --warn: #f59e0b;
+  --crit: #ef4444;
+  --info: #3b82f6;
+  --border: #1f2937;
+  --radius: 12px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+  --mono: "SF Mono", Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Subtle grid background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(31, 41, 55, 0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(31, 41, 55, 0.3) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -1;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* === HERO === */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 6rem 2rem 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.brand {
+  font-family: var(--mono);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  border-radius: 2px;
+  box-shadow: 0 0 12px var(--accent);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+h1 b {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  color: var(--fg-dim);
+  max-width: 640px;
+  margin-bottom: 2.5rem;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.85rem 1.5rem;
+  background: var(--accent);
+  color: var(--bg);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  font-family: inherit;
+}
+
+.cta:hover { transform: translateY(-1px); box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4); }
+.cta.secondary { background: transparent; color: var(--fg); border: 1px solid var(--border); }
+.cta.secondary:hover { border-color: var(--accent); color: var(--accent); }
+
+.live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.85rem;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+
+.live-pill::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.3); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .live-pill::before { animation: none; }
+  * { transition: none !important; }
+}
+
+/* === FALSE FAILURE === */
+#false-failure {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 3rem;
+  letter-spacing: -0.02em;
+}
+
+.assumption-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 720px) {
+  .assumption-grid { grid-template-columns: 1fr; }
+}
+
+.assumption {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+.assumption.think { border-left: 3px solid var(--crit); }
+.assumption.reality { border-left: 3px solid var(--accent); }
+
+.assumption-label {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.assumption.think .assumption-label { color: var(--crit); }
+.assumption.reality .assumption-label { color: var(--accent); }
+
+.assumption p { color: var(--fg-dim); font-size: 1.05rem; }
+
+.number-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .number-strip { grid-template-columns: 1fr; }
+}
+
+.big-number {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem 1rem;
+}
+
+.big-number .arrow {
+  font-family: var(--mono);
+  color: var(--fg-dim);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.big-number .num {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.big-number .label {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--fg-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* === DASHBOARD === */
+#dashboard {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 720px) {
+  .kpis { grid-template-columns: 1fr; }
+}
+
+.kpi-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.kpi-card::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--info));
+  opacity: 0.6;
+}
+
+.kpi-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--fg);
+  font-variant-numeric: tabular-nums;
+  margin-bottom: 0.25rem;
+}
+
+.kpi-label {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--fg-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.kpi-card.crit .kpi-value { color: var(--crit); }
+
+.subhead {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--fg-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2.5rem 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.subhead::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+.finding-list, .conflict-list { list-style: none; }
+
+.finding-item, .conflict-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 0.75rem;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.finding-item:hover, .conflict-item:hover {
+  transform: translateX(2px);
+  border-color: var(--accent);
+}
+
+.finding-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.tag.jurisdiction { background: rgba(59, 130, 246, 0.15); color: var(--info); }
+.tag.severity.critical { background: rgba(239, 68, 68, 0.15); color: var(--crit); }
+.tag.severity.high { background: rgba(245, 158, 11, 0.15); color: var(--warn); }
+.tag.type { background: rgba(148, 163, 184, 0.1); color: var(--fg-dim); }
+.tag.deadline { background: rgba(16, 185, 129, 0.15); color: var(--accent); }
+
+.finding-title {
+  font-size: 0.95rem;
+  color: var(--fg);
+  font-weight: 500;
+  flex: 1;
+  min-width: 200px;
+}
+
+.finding-source {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--fg-dim);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.finding-source:hover { color: var(--accent); }
+
+.conflict-item .topic {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--fg);
+}
+
+.conflict-item .desc {
+  color: var(--fg-dim);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.conflict-jurs {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+/* === METHODOLOGY === */
+#methodology {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 960px) { .method-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px) { .method-grid { grid-template-columns: 1fr; } }
+
+.method-card {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  position: relative;
+}
+
+.method-card .num {
+  font-family: var(--mono);
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.method-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--fg);
+}
+
+.method-card p {
+  font-size: 0.9rem;
+  color: var(--fg-dim);
+}
+
+.method-card svg {
+  width: 32px;
+  height: 32px;
+  stroke: var(--accent);
+  fill: none;
+  stroke-width: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* === CTA === */
+#cta {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+#cta h2 { margin-bottom: 1rem; }
+
+#cta p {
+  color: var(--fg-dim);
+  font-size: 1.1rem;
+  max-width: 540px;
+  margin: 0 auto 2.5rem;
+}
+
+#cta .cta { margin: 0 0.5rem; }
+
+/* === FOOTER === */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 3rem 2rem;
+  text-align: center;
+  color: var(--fg-dim);
+  font-size: 0.85rem;
+}
+
+footer p { margin-bottom: 0.5rem; }
+footer .subtle { opacity: 0.6; font-size: 0.8rem; }
+
+/* === REDUCED MOTION === */
+@media (prefers-reduced-motion: reduce) {
+  .count-num { transition: none !important; }
+  .live-pill::before { animation: none; }
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+<body>
+
+<noscript>
+<style>
+.count-num::after { content: attr(data-final); }
+</style>
+<div style="padding:2rem;text-align:center;background:#f59e0b;color:#0a0e1a;font-weight:600;">
+Enable JavaScript for the live data preview. The static data above is from the latest curator run.
+</div>
+</noscript>
+
+<section id="hero">
+  <div class="brand">COMPLIANCE ATLAS</div>
+  <h1>5,490 findings. 28 jurisdictions. <b>One screen.</b></h1>
+  <p class="hero-sub">Real-time regulatory monitoring that actually works. No team of 50. No enterprise SaaS. Just one operator, one agent swarm, and a clear view of what changed today.</p>
+  <div class="hero-ctas">
+    <a href="#dashboard" class="cta">See the live dashboard</a>
+    <a href="#methodology" class="cta secondary">Read the methodology</a>
+  </div>
+  <div class="live-pill">● LIVE — 190 curated findings across 5 jurisdictions, updated daily</div>
+</section>
+
+<section id="false-failure">
+  <h2>The assumption that needs to die</h2>
+  <div class="assumption-grid">
+    <div class="assumption think">
+      <div class="assumption-label">What people think</div>
+      <p>"You can't track global regulation without a team of fifty. You need an enterprise contract. A six-figure annual subscription. A GRC platform with a hundred dashboards and a Slack channel to ask for help."</p>
+    </div>
+    <div class="assumption reality">
+      <div class="assumption-label">What actually happens</div>
+      <p>One operator. One agent swarm. Five regulatory RSS feeds. Five thousand four hundred ninety raw findings, automatically deduped, severity-classified, cross-referenced. Two hundred make the public cut. Updated daily. No team of fifty.</p>
+    </div>
+  </div>
+
+  <div class="number-strip">
+    <div class="big-number">
+      <div class="arrow">5,490 →</div>
+      <div class="num"><span class="count-num" id="count-raw" data-final="5490">0</span></div>
+      <div class="label">raw findings daily</div>
+    </div>
+    <div class="big-number">
+      <div class="arrow">28 →</div>
+      <div class="num"><span class="count-num" id="count-jur" data-final="5">0</span></div>
+      <div class="label">jurisdictions public</div>
+    </div>
+    <div class="big-number">
+      <div class="arrow">24/7 →</div>
+      <div class="num"><span class="count-num" id="count-crit" data-final="61">0</span></div>
+      <div class="label">critical findings</div>
+    </div>
+  </div>
+</section>
+
+<section id="dashboard">
+  <h2>Live dashboard</h2>
+
+  <div class="kpis">
+    <div class="kpi-card">
+      <div class="kpi-value" id="kpi-total">—</div>
+      <div class="kpi-label">Curated findings</div>
+    </div>
+    <div class="kpi-card crit">
+      <div class="kpi-value" id="kpi-critical">—</div>
+      <div class="kpi-label">Critical</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-value" id="kpi-jurs">—</div>
+      <div class="kpi-label">Jurisdictions</div>
+    </div>
+  </div>
+
+  <div class="subhead">Top critical findings</div>
+  <ul class="finding-list" id="findings-list">
+    <li class="finding-item"><div class="finding-title" style="color:var(--fg-dim)">Loading live data…</div></li>
+  </ul>
+
+  <div class="subhead">Cross-jurisdiction conflicts</div>
+  <ul class="conflict-list" id="conflicts-list">
+    <li class="conflict-item"><div class="topic" style="color:var(--fg-dim)">Loading live data…</div></li>
+  </ul>
+
+  <p style="text-align:center;margin-top:2rem;">
+    <a href="https://github.com/nvmmonsalud/compliance-atlas" class="cta secondary">View on GitHub →</a>
+  </p>
+</section>
+
+<section id="methodology">
+  <h2>How it works</h2>
+  <div class="method-grid">
+    <div class="method-card">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M5 19l3-3M16 8l3-3"/></svg>
+      <div class="num">01</div>
+      <h3>Scan</h3>
+      <p>RSS feeds from 5+ regulatory sources. Federal, EU, UK, Singapore, Japan. Every 4 hours.</p>
+    </div>
+    <div class="method-card">
+      <svg viewBox="0 0 24 24"><path d="M3 4h18l-7 9v6l-4 2v-8L3 4z"/></svg>
+      <div class="num">02</div>
+      <h3>Filter</h3>
+      <p>LLM-powered dedup, severity classification, entity extraction. 5,490 → ~250 by Friday.</p>
+    </div>
+    <div class="method-card">
+      <svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="12" cy="18" r="3"/><path d="M9 7l3 9M15 7l-3 9M8 7h8"/></svg>
+      <div class="num">03</div>
+      <h3>Cross-reference</h3>
+      <p>Same topic, multiple jurisdictions — surfaced as conflict cards. The actual hard part.</p>
+    </div>
+    <div class="method-card">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18M6 12h12M9 18h6"/></svg>
+      <div class="num">04</div>
+      <h3>Curate</h3>
+      <p>Only the top 200 by urgency make the public cut. Critical first, deadline-ordered.</p>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <h2>Want this for your business?</h2>
+  <p>Compliance Atlas runs as a private agent swarm. Fork the repo, point it at your sector, get your own real-time view. No team of fifty required.</p>
+  <a href="https://github.com/nvmmonsalud/compliance-atlas" class="cta">View on GitHub</a>
+  <a href="#" class="cta secondary" onclick="event.preventDefault();alert('Writeup coming soon — follow the repo for updates.');">Read the technical writeup</a>
+</section>
+
+<footer>
+  <p>Built by NVM · Powered by a RegSwarm agent pipeline · Data refreshed daily at 06:00 UTC</p>
+  <p class="subtle">This is a public showcase. The internal atlas tracks 28 jurisdictions; the public version curates to 5.</p>
+</footer>
+
+<script>
+(function() {
+  // === Config ===
+  // Use same-origin API (works for both localhost dev and the deployed version)
+  const API_BASE = window.location.origin + '/api';
+
+  // === Count-up animation ===
+  function countUp(el, target, duration) {
+    duration = duration || 1200;
+    const start = performance.now();
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduceMotion) { el.textContent = target.toLocaleString(); return; }
+    function step(now) {
+      const t = Math.min(1, (now - start) / duration);
+      const eased = 1 - Math.pow(1 - t, 3);
+      el.textContent = Math.floor(target * eased).toLocaleString();
+      if (t < 1) requestAnimationFrame(step);
+      else el.textContent = target.toLocaleString();
+    }
+    requestAnimationFrame(step);
+  }
+
+  // IntersectionObserver for count-up
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          document.querySelectorAll('.count-num').forEach(function(el) {
+            countUp(el, parseInt(el.dataset.final, 10));
+          });
+          io.disconnect();
+        }
+      });
+    }, { threshold: 0.4 });
+    io.observe(document.getElementById('false-failure'));
+  } else {
+    document.querySelectorAll('.count-num').forEach(function(el) {
+      el.textContent = parseInt(el.dataset.final, 10).toLocaleString();
+    });
+  }
+
+  // === Render helpers ===
+  function escapeHTML(s) {
+    if (!s) return '';
+    return String(s).replace(/[&<>"']/g, function(c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  function renderFinding(f) {
+    const jur = f.jurisdiction || '?';
+    const sev = f.severity || 'unknown';
+    const dl = f.deadline || '';
+    const type = f.type || '';
+    const title = escapeHTML(f.title || '');
+    const src = f.source_url || '';
+    return '<li class="finding-item">' +
+      '<div class="finding-row">' +
+        '<span class="tag jurisdiction">' + escapeHTML(jur) + '</span>' +
+        '<span class="tag severity ' + escapeHTML(sev) + '">' + escapeHTML(sev) + '</span>' +
+        (type ? '<span class="tag type">' + escapeHTML(type.replace(/_/g, ' ')) + '</span>' : '') +
+        (dl ? '<span class="tag deadline">⏱ ' + escapeHTML(dl) + '</span>' : '') +
+      '</div>' +
+      '<div class="finding-title">' + title + '</div>' +
+      (src ? '<a class="finding-source" href="' + escapeHTML(src) + '" target="_blank" rel="noopener">' + escapeHTML(src) + '</a>' : '') +
+    '</li>';
+  }
+
+  function renderConflict(c) {
+    const topic = escapeHTML(c.topic || '');
+    const desc = escapeHTML(c.description || '');
+    const jurs = (c.jurisdictions || []).map(function(j) {
+      return '<span class="tag jurisdiction">' + escapeHTML(j) + '</span>';
+    }).join('');
+    return '<li class="conflict-item">' +
+      '<div class="topic">' + topic + '</div>' +
+      '<div class="desc">' + desc + '</div>' +
+      '<div class="conflict-jurs">' + jurs + '</div>' +
+    '</li>';
+  }
+
+  // === Fetch live data ===
+  function fetchData() {
+    // Summary
+    fetch(API_BASE + '/summary')
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(s) {
+        if (!s) return;
+        document.getElementById('kpi-total').textContent = s.total_findings.toLocaleString();
+        document.getElementById('kpi-critical').textContent = s.critical_findings.toLocaleString();
+        document.getElementById('kpi-jurs').textContent = (s.jurisdictions || []).length;
+      })
+      .catch(function() {});
+
+    // Top 5 critical findings
+    fetch(API_BASE + '/findings?severity=critical&limit=5')
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(d) {
+        if (!d || !d.findings) return;
+        document.getElementById('findings-list').innerHTML = d.findings.map(renderFinding).join('');
+      })
+      .catch(function() {});
+
+    // Cross-jurisdiction conflicts
+    fetch(API_BASE + '/conflicts')
+      .then(function(r) { return r.ok ? r.json() : null; })
+      .then(function(d) {
+        if (!d || !d.conflicts) return;
+        document.getElementById('conflicts-list').innerHTML = d.conflicts.slice(0, 3).map(renderConflict).join('');
+      })
+      .catch(function() {});
+  }
+
+  // Initial fetch + 60s refresh
+  fetchData();
+  setInterval(fetchData, 60000);
+})();
+</script>
+</body>
+</html>

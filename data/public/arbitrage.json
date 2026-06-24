@@ -1,0 +1,40 @@
+{
+  "opportunities": [
+    {
+      "id": "arb-01",
+      "sector": "fintech",
+      "opportunity": "Single AI governance submission",
+      "description": "Companies subject to both US (OSTP) and EU (AI Act) can pre-align documentation, avoiding 2x audit cost.",
+      "jurisdictions": [
+        "us-federal",
+        "eu"
+      ],
+      "magnitude": "high"
+    },
+    {
+      "id": "arb-02",
+      "sector": "crypto",
+      "opportunity": "Cross-jurisdiction stablecoin issuance",
+      "description": "A US-regulated reserve structure (GENIUS Act) plus EU MiCA authorization enables dual-jurisdiction issuance from a single entity.",
+      "jurisdictions": [
+        "us-federal",
+        "eu"
+      ],
+      "magnitude": "high"
+    },
+    {
+      "id": "arb-03",
+      "sector": "fintech",
+      "opportunity": "Open Banking API standardization",
+      "description": "Build to UK Open Banking standard first \u2014 extends to EU PSD2/PSR with minimal adaptation.",
+      "jurisdictions": [
+        "uk",
+        "eu",
+        "sg"
+      ],
+      "magnitude": "medium"
+    }
+  ],
+  "count": 3,
+  "generated_at": "2026-06-24T02:11:01.115070Z"
+}

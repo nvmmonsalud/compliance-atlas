@@ -1,0 +1,33 @@
+{
+  "name": "Compliance Atlas",
+  "version": "1.0.0",
+  "generated_at": "2026-06-24T02:11:01.115070Z",
+  "total_findings": 59,
+  "total_unfiltered": 118,
+  "critical_findings": 16,
+  "high_findings": 43,
+  "jurisdictions": [
+    "eu",
+    "japan",
+    "sg",
+    "uk",
+    "us-federal"
+  ],
+  "jurisdiction_counts": {
+    "us-federal": 4,
+    "uk": 26,
+    "eu": 21,
+    "japan": 6,
+    "sg": 2
+  },
+  "sectors": [
+    "crypto",
+    "fintech"
+  ],
+  "sector_counts": {
+    "crypto": 30,
+    "fintech": 56
+  },
+  "nearest_deadline": "2026-05-14",
+  "next_refresh": "daily 06:00 UTC"
+}

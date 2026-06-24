@@ -1,0 +1,1037 @@
+{
+  "findings": [
+    {
+      "id": "us-senate-2026-05-09-clarity-act-vote",
+      "jurisdiction": "us-federal",
+      "regulator": "Senate Banking Committee",
+      "type": "proposed_rule",
+      "title": "US Senate Banking Committee to Consider Clarity Act Crypto Bill in Week of May 12",
+      "summary": "Reuters reports the US Senate Banking Committee is set to consider the Clarity Act crypto market structure bill next week with a committee vote expected around May 14. This follows the White House May 7 announcement targeting July 4 for full passage.",
+      "source_url": "https://www.reuters.com/technology/us-senate-committee-set-consider-long-awaited-crypto-bill-next-week-2026-05-09/",
+      "sectors": [
+        "crypto",
+        "fintech"
+      ],
+      "severity": "critical",
+      "effective_date": "2026-05-14",
+      "deadline": "2026-05-14",
+      "confidence": 0.9,
+      "detected_at": "2026-05-09T18:29:59Z"
+    },
+    {
+      "id": "us-whitehouse-2026-05-07-clarity-act",
+      "jurisdiction": "us-federal",
+      "regulator": "White_House",
+      "type": "proposed_rule",
+      "title": "White House Targets July 4 for Clarity Act Passage (Crypto Market Structure Bill)",
+      "summary": "White House digital assets adviser Patrick Witt announced a July 4 target date for passage of the Clarity Act, a crypto market structure bill. Senate Banking Committee hearing expected this month.",
+      "source_url": "https://www.coindesk.com/policy/2026/05/07/white-house-targets-july-4-clarity-act-passage/",
+      "sectors": [
+        "crypto",
+        "fintech"
+      ],
+      "severity": "critical",
+      "effective_date": "2026-07-04",
+      "deadline": "2026-07-04",
+      "confidence": 0.9,
+      "detected_at": "2026-05-08T00:49:00Z"
+    },
+    {
+      "id": "UK-2026-05-45cf3f7acff4",
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "enforcement_action",
+      "title": "Three arrested in FCA investigation into suspected unlawful financial promotions",
+      "summary": "Three people have been arrested as part of a crackdown on suspected illegal financial promotions. Two homes in the Chelmsford and Romford areas were searched, as part of an operation led by the FCA and the Eastern Regional Special Operations Unit (ERSOU), a specialist policing unit that tackles serious and organised crime.Adverts from firms that aren't FCA-regulated can be a warning sign of a scam. If something goes wrong, these firms aren't covered by the rules that protect people's money \u2013 me",
+      "source_url": "https://www.fca.org.uk/news/news-stories/three-arrested-fca-investigation-suspected-unlawful-financial-promotions",
+      "sectors": [
+        "fintech",
+        "crypto"
+      ],
+      "severity": "critical",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.8,
+      "detected_at": "2026-05-09T18:59:48Z"
+    },
+    {
+      "id": "UK-2026-05-d96345df8ca0",
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "announcement",
+      "title": "A reform-minded regulator",
+      "summary": "Speech by Nikhil Rathi, FCA chief executive, at the Association of Foreign Banks (AFB) luncheon. When I saw that a boxing ring had been temporarily installed in this room last autumn, I wasn\u2019t quite sure whether it was a warning to us regulators\u2026Or some kind of art installation commenting on the past few years in financial markets.At some points it has felt bruising, to say the least.Some pressures have been sharp and immediate \u2013 geopolitical shocks, sudden market events.Others slower but no le",
+      "source_url": "https://www.fca.org.uk/news/speeches/reform-minded-regulator",
+      "sectors": [
+        "fintech",
+        "crypto"
+      ],
+      "severity": "critical",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.8,
+      "detected_at": "2026-05-09T18:59:48Z"
+    },
+    {
+      "id": "UK-2026-05-b6bd47b97c8c",
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "enforcement_action",
+      "title": "FCA charges Shaun Lawrence for unauthorised mortgage broking",
+      "summary": "The FCA has charged Shaun Lawrence for operating as a mortgage broker without authorisation. Mr Lawrence, who also goes by the names Shaun Lawrence-Bright and Shaun Bright, was previously authorised to give mortgage advice.However, in 2008 he had his permissions revoked and was fined. He was also banned from working in a regulated role within financial services.The FCA alleges that Mr Lawrence has breached the Financial Services and Markets Act by continuing to provide mortgage broking services",
+      "source_url": "https://www.fca.org.uk/news/press-releases/fca-charges-shaun-lawrence-unauthorised-mortgage-broking",
+      "sectors": [
+        "fintech",
+        "crypto"
+      ],
+      "severity": "critical",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.8,
+      "detected_at": "2026-05-09T18:59:48Z"
+    },
+    {
+      "id": "UK-2026-05-a048ea948bd2",
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "enforcement_action",
+      "title": "FCA Board appoints 2 new members to the Regulatory Decisions Committee",
+      "summary": "The FCA Board appoints new members to decision-making committee. The Board of the FCA has appointed Jonathan Peddie and Raymond Cox KC as new members of the FCA\u2019s Regulatory Decisions Committee (RDC).The RDC is responsible for taking certain regulatory decisions on behalf of the FCA relating to contested enforcement action. Committee members bring a broad range of professional experience to support fair, independent and evidence-based decision-making.Alison Potter, the chair of the RDC, said:'I",
+      "source_url": "https://www.fca.org.uk/news/press-releases/fca-board-appoints-2-new-members-regulatory-decisions-committee",
+      "sectors": [
+        "fintech",
+        "crypto"
+      ],
+      "severity": "critical",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.8,
+      "detected_at": "2026-05-09T18:59:48Z"
+    },
+    {
+      "id": "UK-2026-05-909c11cb6633",
+      "jurisdiction": "uk",
+      "regulator": "HM Treasury",
+      "type": "announcement",
+      "title": "Correspondence: Open letters between HM Treasury and Bank of England, April 2026",
+      "summary": "",
+      "source_url": "https://www.gov.uk/government/publications/open-letters-between-hm-treasury-and-bank-of-england-april-2026",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "critical",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.8,
+      "detected_at": "2026-05-09T18:59:49Z"
+    },
+    {
+      "id": "esma-2026-07-01statementontheend",
+      "jurisdiction": "eu",
+      "regulator": "ESMA",
+      "type": "guidance",
+      "title": "Statement on the end of transitional periods under MiCA",
+      "summary": "ESMA warns that the MiCA transitional period expires 1 July 2026. Entities providing crypto-asset services without a MiCA licence will be in breach of EU law and must cease offering such services.",
+      "source_url": "https://www.esma.europa.eu",
+      "sectors": [
+        "crypto",
+        "fintech"
+      ],
+      "severity": "critical",
+      "effective_date": "2026-07-01",
+      "deadline": null,
+      "confidence": 0.95,
+      "detected_at": "2026-05-09T23:09:00Z"
+    },
+    {
+      "id": "UK-2026-05-6975cdbdef3a",
+      "jurisdiction": "uk",
+      "regulator": "HM Treasury",
+      "type": "proposed_rule",
+      "title": "Commercial Credit Data Sharing and Bank Referral Scheme: Consultation and Call for Evidence",
+      "summary": "",
+      "source_url": "https://www.gov.uk/government/consultations/commercial-credit-data-sharing-and-bank-referral-scheme-consultation-and-call-for-evidence--2",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "critical",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.8,
+      "detected_at": "2026-05-11T09:52:30Z"
+    },
+    {
+      "id": null,
+      "jurisdiction": "eu",
+      "regulator": "ESMA",
+      "type": "guidance",
+      "title": "ESMA Warns: MiCA Transitional Period Expires 1 July 2026 \u2014 Unlicensed Crypto Firms Must Cease EU Services",
+      "summary": "ESMA issued a statement reminding market participants that the MiCA transitional period expires 1 July 2026. After that date, any entity providing crypto-asset services to EU clients without a MiCA licence will be in breach of EU law and must cease offering such services. ESMA expects unauthorised firms to have wind-down plans in place and ensure orderly exit without harm to clients.",
+      "source_url": "https://www.esma.europa.eu",
+      "sectors": [
+        "crypto",
+        "fintech"
+      ],
+      "severity": "critical",
+      "effective_date": "2026-07-01",
+      "deadline": null,
+      "confidence": 0.92,
+      "detected_at": "2026-05-11T13:31:00Z"
+    },
+    {
+      "id": "UK-2026-05-b56707dcff39",
+      "jurisdiction": "uk",
+      "regulator": "HM Treasury",
+      "type": "announcement",
+      "title": "Government s access to face to face banking services",
+      "summary": "",
+      "source_url": "https://www.gov.uk/government/news/government-reviews-access-to-face-to-face-banking-services",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "critical",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.8,
+      "detected_at": "2026-05-14T12:06:00Z"
+    },
+    {
+      "id": "UK-2026-05-ab4f6ad9e4e7",
+      "jurisdiction": "uk",
+      "regulator": "HM Treasury",
+      "type": "announcement",
+      "title": "Independent report: HM Treasury \u2013 Access to Banking Services Review",
+      "summary": "",
+      "source_url": "https://www.gov.uk/government/publications/hm-treasury-access-to-banking-services-review",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "critical",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.8,
+      "detected_at": "2026-05-14T14:07:19Z"
+    },
+    {
+      "id": "UK-2026-06-0bdf65bf920e",
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "announcement",
+      "title": "Convicted money launderer sentenced to extra prison time",
+      "summary": "A convicted money launderer has been sentenced to an additional 499 daysin prison for failing to fully pay the money owed under a Confiscation Order. In 2021,RichardFaithfull,now36,wassentenced to5 years and 10 monthsin prisonfor laundering \u00a32.5 million, following a prosecution brought by the Financial Conduct Authority (FCA).He was part of a trans-national organised crime group which laundered the proceeds of at least 7 overseas investment frauds.Mr Faithfullis required topay back \u00a3529,961,bas",
+      "source_url": "https://www.fca.org.uk/news/press-releases/convicted-money-launderer-sentenced-extra-prison-time",
+      "sectors": [
+        "fintech",
+        "crypto"
+      ],
+      "severity": "critical",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.8,
+      "detected_at": "2026-06-01T02:51:07Z"
+    },
+    {
+      "id": "UK-2026-06-229dc2b7d7b5",
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "enforcement_action",
+      "title": "FCA fines and bans Frank Breuer for serious misconduct in pension transfer advice",
+      "summary": "The FCA has banned Frank Breuer from working in UK financial services and fined him \u00a3755,000 for repeatedly acting without integrity and putting customers at risk for personal financial gain. Mr Breuer was the joint owner and sole director of Bluesky Wealth Management Limited (Bluesky), which provided advice on investments and pensions. Although authorised to advise on defined benefit (DB) pension transfers, the firm did not have the appropriate professional insurance in place from April 2019.",
+      "source_url": "https://www.fca.org.uk/news/press-releases/fca-fines-bans-frank-breuer-serious-misconduct-pension-transfer-advice",
+      "sectors": [
+        "fintech",
+        "crypto"
+      ],
+      "severity": "critical",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.8,
+      "detected_at": "2026-06-01T02:51:07Z"
+    },
+    {
+      "id": "UK-2026-06-61f70bd0bb10",
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "announcement",
+      "title": "Working together against financial crime",
+      "summary": "Speech by Nikhil Rathi, FCA chief executive at the FCA's financial crime conference. A new threat landscapeFinancial crime is changing \u2013 fast.It\u2019s more technologically enabled. More organised than ever before. And moving at speed.Which is why the fight against financial crime sits at the heart of our 5-year strategy.But it\u2019s not just the volume that\u2019s changed; it\u2019s who is behind it.Organised criminal groups running professional networks that operate across borders.Take investment fraud.A person",
+      "source_url": "https://www.fca.org.uk/news/speeches/working-together-against-financial-crime",
+      "sectors": [
+        "fintech",
+        "crypto"
+      ],
+      "severity": "critical",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.8,
+      "detected_at": "2026-06-01T02:51:07Z"
+    },
+    {
+      "id": "UK-2026-06-0a232f6cee86",
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "guidance",
+      "title": "FCA, Bank of England and Treasury joint statement on frontier AI models and cyber resilience",
+      "summary": "Why frontier AI matters for firmsArtificial intelligence (AI) continues to evolve rapidly. Frontier AI models represent a step-change in capability, with significant implications for cyber security and operational resilience.The cyber capabilities of current frontier AI models are already exceeding what a skilled practitioner could achieve, and at a significantly higher speed, greater scale, and lower cost. These capabilities, if used maliciously, amplify cyber threats to firms\u2019 safety and sound",
+      "source_url": "https://www.fca.org.uk/news/statements/fca-boe-treasury-joint-statement-frontier-ai-models-cyber-resilience",
+      "sectors": [
+        "fintech",
+        "crypto"
+      ],
+      "severity": "critical",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.8,
+      "detected_at": "2026-06-01T02:51:07Z"
+    },
+    {
+      "id": "fca-2026-04-15-crypto-perimeter",
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "proposed_rule",
+      "title": "CP26/13: Cryptoasset Perimeter Guidance (Consultation)",
+      "summary": "FCA consultation on proposed perimeter guidance for UK crypto regime under FSMA 2000 (Cryptoassets) Regulations 2026. Covers stablecoins, cryptoasset safeguarding, trading platforms, dealing, arranging. Consultation closes 3 June 2026.",
+      "source_url": "https://www.fca.org.uk/publications/consultation-papers/cp26-13-cryptoasset-perimeter-guidance",
+      "sectors": [
+        "crypto"
+      ],
+      "severity": "high",
+      "effective_date": "2027-10-25",
+      "deadline": "2026-06-03",
+      "confidence": 0.93,
+      "detected_at": "2026-05-08T00:49:00Z"
+    },
+    {
+      "id": null,
+      "jurisdiction": "eu",
+      "regulator": "European Commission",
+      "type": "final_rule",
+      "title": "EU Countries and Lawmakers Clinch Provisional Deal on Watered-Down AI Omnibus Rules",
+      "summary": "UPDATE: After initially failing to reach agreement, EU member states and European Parliament lawmakers have now clinched a provisional deal on amended AI Act rules, clarifying overlaps with machinery regulation and simplifying compliance requirements. The deal represents a significant scaling-back from the original AI Act provisions.",
+      "source_url": "https://iapp.org/news/eu/eu-agrees-amend-ai-act-clarifies-overlap-machinery-rules/",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.9,
+      "detected_at": null
+    },
+    {
+      "id": null,
+      "jurisdiction": "eu",
+      "regulator": "Global Banking & Finance Review",
+      "type": "enforcement_action",
+      "title": "Apple, Google Warn EU AI Access Rules Threaten Privacy & Security - Global Banking & Finance Review",
+      "summary": "Apple, Google Warn EU AI Access Rules Threaten Privacy & Security - Global Banking & Finance Review",
+      "source_url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOeXFVOTh0X1NSR2JSN0h6SndWa3FpYTZIcm5qbmhDd0FvLU8zTjBsSWZSQXVQSGttR1JsNEJpYS1odVlmcjdFVkdlRTFXcDktNDdxZHR2REVjUlZmSGNhakRsdElVSFJBbFNlb2x6WmhHeEJMcnZjNGJONmdMeFJkVnRsWUk1aHdBb2dBSE1ueF9TMHVSQXB1UkVfTFllUkk?oc=5",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.85,
+      "detected_at": null
+    },
+    {
+      "id": "regswarm_20260517_001153_002",
+      "jurisdiction": "eu",
+      "regulator": "Polish Parliament",
+      "type": "final_rule",
+      "title": "Poland Passes Crypto Regulation Bill to Align with EU MiCA Framework",
+      "summary": "Polish lawmakers adopted a comprehensive crypto regulation bill after repeated presidential vetoes, aligning national law with the EU's Markets in Crypto-Assets (MiCA) framework. The legislation comes amid a multi-million dollar fraud probe and establishes licensing requirements for crypto service providers operating in Poland.",
+      "source_url": "https://www.reuters.com/technology/polish-lawmakers-adopt-crypto-regulation-amid-multi-million-dollar-fraud-probe-2026-05-15/",
+      "sectors": [
+        "crypto",
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.92,
+      "detected_at": null
+    },
+    {
+      "id": "023e51679d97",
+      "jurisdiction": "eu",
+      "regulator": "Polish Parliament",
+      "type": "final_rule",
+      "title": "Poland Passes MiCA Crypto Bill as 96 Million Dollar Zondacrypto Fraud Probe Deepens",
+      "summary": "Polish lawmakers adopted a new crypto regulation implementing MiCA framework, making Poland one of the last EU member states to transpose the regulation. The bill comes amid a deepening political divide over a 96 million dollar fraud probe involving Zondacrypto exchange. The president had previously vetoed two earlier versions.",
+      "source_url": "https://www.reuters.com/",
+      "sectors": [
+        "crypto",
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.9,
+      "detected_at": null
+    },
+    {
+      "id": null,
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "enforcement_action",
+      "title": "FCA bans and fines director \u00a3755,000 for advice and insurance failures",
+      "summary": "UK FCA banned a financial advisor director and imposed a \u00a3755,000 fine for failures in advice and insurance recommendations.",
+      "source_url": "https://www.fca.org.uk/news",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.9,
+      "detected_at": null
+    },
+    {
+      "id": null,
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "enforcement_action",
+      "title": "UK watchdog bans pension advisory director for misconduct",
+      "summary": "UK FCA banned a pension advisory firm director for misconduct in pension transfer recommendations.",
+      "source_url": "https://www.reuters.com",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.85,
+      "detected_at": null
+    },
+    {
+      "id": null,
+      "jurisdiction": "japan",
+      "regulator": "FSA/JFSA",
+      "type": "guidance",
+      "title": "Japan FSA Tells Real Estate and Crypto Sectors to Tighten AML Checks on Property Deals",
+      "summary": "Japan's Financial Services Agency has instructed real estate and cryptocurrency sectors to implement enhanced anti-money laundering checks on property transactions. The directive targets the use of crypto assets in real estate purchases as a money laundering vector, requiring stricter KYC and transaction monitoring.",
+      "source_url": "https://www.msn.com/en-us/money/markets/japan-tells-real-estate-and-crypto-sectors-to-tighten-aml-checks",
+      "sectors": [
+        "crypto"
+      ],
+      "severity": "high",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.8,
+      "detected_at": null
+    },
+    {
+      "id": null,
+      "jurisdiction": "japan",
+      "regulator": "FSA",
+      "type": "guidance",
+      "title": "Japan's Top Banks Launch Stablecoin Pilot With FSA Backing",
+      "summary": "Japan's three megabanks (MUFG, SMBC, Mizuho) launched a stablecoin pilot program with FSA regulatory support, marking Japan's first major bank-backed stablecoin initiative.",
+      "source_url": "https://www.coinmarketcap.com",
+      "sectors": [
+        "crypto",
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.85,
+      "detected_at": null
+    },
+    {
+      "id": "us-cftc-2026-05-06-crypto-developers",
+      "jurisdiction": "us-federal",
+      "regulator": "CFTC",
+      "type": "guidance",
+      "title": "CFTC Chair Pushes New Rules to Protect Crypto Software Developers",
+      "summary": "CFTC Chair Michael Selig announced plans for formal rulemaking to clarify broker registration for non-custodial crypto software developers. Rules aim to protect developers from regulatory uncertainty.",
+      "source_url": "https://www.financefeeds.com/cftc-chair-michael-selig-pushes-new-rules-protect-crypto-software-developers/",
+      "sectors": [
+        "crypto",
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "",
+      "deadline": "",
+      "confidence": 0.85,
+      "detected_at": "2026-05-08T00:49:00Z"
+    },
+    {
+      "id": "fca-2026-05-06-competition-paypal",
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "enforcement_action",
+      "title": "Competition Act 1998 Investigations - PayPal / Mastercard / Visa",
+      "summary": "FCA confirms it is investigating Mastercard, PayPal, and Visa under Chapter I and Chapter II of the Competition Act 1998 for suspected anti-competitive conduct linked to the funding and usage of PayPal digital wallet. No findings have been made yet.",
+      "source_url": "https://www.fca.org.uk/news/press-releases/competition-act-1998-investigations",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "",
+      "deadline": "",
+      "confidence": 0.95,
+      "detected_at": "2026-05-08T00:49:00Z"
+    },
+    {
+      "id": "sec-2026-05-08-crypto-trading-rules",
+      "jurisdiction": "us-federal",
+      "regulator": "SEC",
+      "type": "guidance",
+      "title": "SEC Hints at New Regulatory Framework for Crypto Trading",
+      "summary": "SEC signals forthcoming rules of play for crypto trading, indicating a new regulatory framework for digital asset exchanges and trading venues is being developed.",
+      "source_url": "https://www.thestreet.com/policy/sec-hints-at-new-rules-of-play-for-crypto-trading",
+      "sectors": [
+        "crypto",
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "",
+      "deadline": null,
+      "confidence": 0.85,
+      "detected_at": "2026-05-09T18:29:47Z"
+    },
+    {
+      "id": "ecb-2026-05-09-ai-infrastructure-review",
+      "jurisdiction": "eu",
+      "regulator": "ECB",
+      "type": "guidance",
+      "title": "ECB Executive Escriv\u00e1 Calls for Financial Infrastructure Review Due to AI Risks",
+      "summary": "ECB Executive Board member Escriv\u00e1 called for a comprehensive of financial infrastructure to address risks posed by AI, including operational resilience, model risk management, and systemic risk considerations.",
+      "source_url": "https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260509.html",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "",
+      "deadline": null,
+      "confidence": 0.8,
+      "detected_at": "2026-05-09T18:29:47Z"
+    },
+    {
+      "id": "fca-2026-05-08-motor-finance-update",
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "guidance",
+      "title": "FCA Update on Legal Challenges to Motor Finance Compensation Scheme",
+      "summary": "FCA issued an update statement for firms and consumers regarding legal challenges to the motor finance compensation scheme. This follows ongoing judicial proceedings affecting motor finance commission disclosures. The update provides guidance to firms on compliance expectations during the legal challenge period.",
+      "source_url": "https://www.fca.org.uk/news?query=&type%5B%5D=statements",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "",
+      "deadline": "",
+      "confidence": 0.85,
+      "detected_at": "2026-05-09T18:49:00Z"
+    },
+    {
+      "id": "sg-mas-2026-05-07-sfa-amendment-bill",
+      "jurisdiction": "sg",
+      "regulator": "MAS",
+      "type": "final_rule",
+      "title": "Singapore Parliament Passes Securities and Futures (Amendment) Bill for Global Listing Board",
+      "summary": "Parliament passed amendments to the Securities and Futures Act creating a new legislative framework for the Global Listing Board (GLB) \u2014 a third equity board on SGX dedicated to dual SGX/Nasdaq listings. Companies can now list on both exchanges simultaneously with reduced paperwork and a single set of offering documents. MAS empowered to harmonize securities laws between Singapore and foreign countries. GLB set to go live mid-2026.",
+      "source_url": "https://www.channelnewsasia.com/singapore/parliament-approves-securities-futures-amendment-bill-enable-dual-listing-5269896",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "2026-05-07",
+      "deadline": "",
+      "confidence": 0.88,
+      "detected_at": "2026-05-09T18:49:00Z"
+    },
+    {
+      "id": "UK-2026-05-b582b940684d",
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "enforcement_action",
+      "title": "Trust, tradition and the future of mutual growth",
+      "summary": "Speech by Sarah Pritchard, FCA deputy chief executive, at the BSA Annual Conference, Edinburgh. As a history lover, it\u2019s thrilling to be in a city like Edinburgh \u2013 called a \u2018hot-bed of genius\u2019 during the Scottish Enlightenment.What defined the Enlightenment spirit was the refusal to settle, and a determination to make things better for the future.It\u2019s the kind of approach I\u2019m taking to this moment of regulatory reform.Working with others to solve difficult problems, protecting trust and good ou",
+      "source_url": "https://www.fca.org.uk/news/speeches/trust-tradition-and-future-mutual-growth",
+      "sectors": [
+        "fintech",
+        "crypto"
+      ],
+      "severity": "high",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.8,
+      "detected_at": "2026-05-09T18:59:48Z"
+    },
+    {
+      "id": "UK-2026-05-c936cbff266f",
+      "jurisdiction": "uk",
+      "regulator": "HM Treasury",
+      "type": "proposed_rule",
+      "title": "Consultation on the UK Treasury bill market",
+      "summary": "",
+      "source_url": "https://www.gov.uk/government/consultations/consultation-on-the-uk-treasury-bill-market",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.8,
+      "detected_at": "2026-05-09T18:59:49Z"
+    },
+    {
+      "id": "UK-2026-05-40ee1466493c",
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "enforcement_action",
+      "title": "Competition Act 1998 investigations into Mastercard, PayPal and Visa",
+      "summary": "The FCA is investigating Mastercard, PayPal and Visa under Chapter I in the Competition Act 1998, and Mastercard and Visa under Chapter II, for suspected anti-competitive conduct linked to the funding and usage of PayPal's digital wallet.",
+      "source_url": "https://www.fca.org.uk/news/press-releases/competition-act-1998-investigations",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "2026-05-06",
+      "deadline": null,
+      "confidence": 0.95,
+      "detected_at": "2026-05-09T22:35:23Z"
+    },
+    {
+      "id": "esma-2026-05-29guidelinesonendors",
+      "jurisdiction": "eu",
+      "regulator": "ESMA",
+      "type": "consultation",
+      "title": "Guidelines on Endorsement under Article 11 of the ESG Rating Regulation",
+      "summary": "ESMA consulting on endorsement guidelines for ESG rating providers under the new ESG Rating Regulation. Deadline 29 May 2026.",
+      "source_url": "https://www.esma.europa.eu",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "2026-05-29",
+      "deadline": null,
+      "confidence": 0.85,
+      "detected_at": "2026-05-09T23:09:00Z"
+    },
+    {
+      "id": "eba-2026-05-10ebaconsultationon",
+      "jurisdiction": "eu",
+      "regulator": "EBA",
+      "type": "consultation",
+      "title": "EBA consultation on simplification of credit risk framework",
+      "summary": "EBA consulting on major simplification of the credit risk framework, including simplification of supervisory reporting. Discussion period closes 10 May 2026.",
+      "source_url": "https://www.eba.europa.eu",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "2026-05-10",
+      "deadline": null,
+      "confidence": 0.85,
+      "detected_at": "2026-05-09T23:09:00Z"
+    },
+    {
+      "id": "fca-2026-05-08fcaequitefarmswarn",
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "enforcement_action",
+      "title": "FCA EquiteFarms warning and Edgebitpro new warning",
+      "summary": "FCA updated warning on EquiteFarms and issued new warning on Edgebitpro (8 May 2026), flagging potentially unauthorized firms in crypto/investment space.",
+      "source_url": "https://www.fca.org.uk/news",
+      "sectors": [
+        "crypto",
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "2026-05-08",
+      "deadline": null,
+      "confidence": 0.9,
+      "detected_at": "2026-05-09T23:09:00Z"
+    },
+    {
+      "id": "fca-2026-05-08motorfinance",
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "guidance",
+      "title": "FCA Legal challenges to motor finance compensation scheme - update for firms and consumers",
+      "summary": "FCA issued update on legal challenges to motor finance compensation scheme, providing guidance for affected firms and consumers.",
+      "source_url": "https://www.fca.org.uk/news",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "2026-05-08",
+      "deadline": null,
+      "confidence": 0.9,
+      "detected_at": "2026-05-09T23:09:00Z"
+    },
+    {
+      "id": "fca-2026-05-11cryptopreapp",
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "guidance",
+      "title": "FCA Cryptoasset firms pre-application meetings available from 11 May 2026",
+      "summary": "FCA announced cryptoasset firms seeking authorization can request pre-application meetings starting 11 May 2026, part of UK crypto regulatory framework rollout.",
+      "source_url": "https://www.fca.org.uk/news",
+      "sectors": [
+        "crypto",
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "2026-05-11",
+      "deadline": null,
+      "confidence": 0.9,
+      "detected_at": "2026-05-09T23:09:00Z"
+    },
+    {
+      "id": "fca-2026-05-01arrests",
+      "jurisdiction": "uk",
+      "regulator": "FCA",
+      "type": "enforcement_action",
+      "title": "Three arrested in FCA probe into suspected unlawful financial promotions",
+      "summary": "Three individuals arrested in connection with FCA investigation into suspected unlawful financial promotions.",
+      "source_url": "https://www.fca.org.uk/news",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "2026-05-01",
+      "deadline": null,
+      "confidence": 0.9,
+      "detected_at": "2026-05-09T23:09:00Z"
+    },
+    {
+      "id": "uk-boe-2026-05-10-stablecoin-wrestle",
+      "jurisdiction": "uk",
+      "regulator": "Bank of England",
+      "type": "guidance",
+      "title": "Bank of England Governor Foresees 'Wrestle' with US on Stablecoin Regulation, Warns of Stability Risks",
+      "summary": "Bank of England Governor Andrew Bailey indicated the UK will face regulatory challenges competing with US stablecoin legislation (GENIUS Act). Bailey cautioned that stablecoin adoption poses stability risks for the UK and that the BoE may pursue tighter stablecoin rules than currently proposed, potentially requiring issuers to hold backing assets in UK-regulated institutions.",
+      "source_url": "https://www.crowdfundinsider.com/2026/05/10/bank-of-england-governor-foresees-wrestle-with-us-on-stablecoin-oversight",
+      "sectors": [
+        "crypto",
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.88,
+      "detected_at": "2026-05-11T01:03:50.192680Z"
+    },
+    {
+      "id": "eu-nl-2026-05-10-yango-gdpr-fine",
+      "jurisdiction": "eu",
+      "regulator": "Dutch DPA",
+      "type": "enforcement_action",
+      "title": "Dutch Data Protection Authority Issues \u20ac100M GDPR Fine Against Yango for Data Flows to Russia",
+      "summary": "The Dutch Autoriteit Persoonsgegevens issued a \u20ac100 million GDPR fine against Yango (Yandex subsidiary) for unlawful data transfers to Russia. The fine is one of the largest GDPR enforcement actions in 2026, highlighting ongoing scrutiny of cross-border data transfers outside the EU.",
+      "source_url": "https://ppc.land/yangos-100m-gdpr-fine-dutch-watchdog-cracks-down-on-data-flows-to-russia",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.88,
+      "detected_at": "2026-05-11T01:03:50.192725Z"
+    },
+    {
+      "id": null,
+      "jurisdiction": "eu",
+      "regulator": "EBA",
+      "type": "final_rule",
+      "title": "EBA Amends Guidelines on the Definition of Default \u2014 CRR 3 Alignment",
+      "summary": "Final Report amending Guidelines on the application of the definition of default. Introduces targeted amendments for non-recourse factoring and confirms the 1% NPV threshold in debt restructuring remains appropriate for prudential default recognition.",
+      "source_url": "https://www.eba.europa.eu/publications-and-media/press-releases",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "2026-05-07",
+      "deadline": null,
+      "confidence": 0.88,
+      "detected_at": "2026-05-11T17:55:30.509326Z"
+    },
+    {
+      "id": null,
+      "jurisdiction": "eu",
+      "regulator": "European Commission",
+      "type": "final_rule",
+      "title": "EU Approves Sanctions on Israeli Settlers and Hamas \u2014 Crypto Compliance Stakes Rise",
+      "summary": "The European Union approved new sanctions targeting Israeli settlers and Hamas figures, raising compliance obligations for crypto-asset service providers operating in the EU. Regulated firms must ensure enhanced screening and transaction monitoring under expanded sanctions lists.",
+      "source_url": "https://cryptobriefing.com/european-union-approves-sanctions-israeli-settlers-hamas-figures-raising-crypto-compliance-stakes/",
+      "sectors": [
+        "crypto",
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "",
+      "deadline": null,
+      "confidence": 0.82,
+      "detected_at": "2026-05-11T22:01:03Z"
+    },
+    {
+      "id": "ecb-2026-05-11-lagarde-stablecoins",
+      "jurisdiction": "eu",
+      "regulator": "ECB",
+      "type": "guidance",
+      "title": "ECB President Lagarde Speech: Stablecoins and the Future of Money \u2014 Separating Functions from Instruments",
+      "summary": "ECB President Christine Lagarde delivered a speech at the Bank of Spain LatAm Economic Forum addressing stablecoins' rapid growth from $10B to $300B+ in six years. She emphasized that MiCA brought stablecoins within the regulatory perimeter in 2024, noting concerns about financial stability risks particularly in Latin America and Africa. Lagarde argued the question is not whether stablecoins should exist but whether jurisdictions can afford to be without them, and called for separating monetary policy functions from payment instruments.",
+      "source_url": "https://www.bis.org/review/r260511d.htm",
+      "sectors": [
+        "crypto",
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "2026-05-11",
+      "deadline": null,
+      "confidence": 0.93,
+      "detected_at": "2026-05-12T02:19:03.367143Z"
+    },
+    {
+      "id": "eu-ecb-2026-05-12-climate-nature-risks",
+      "jurisdiction": "eu",
+      "regulator": "ECB",
+      "type": "guidance",
+      "title": "ECB Updates Compendium of Good Practices for Climate and Nature-Related Risk Management",
+      "summary": "The ECB released its updated compendium of good practices for climate and nature-related risk management and stress testing. ECB Executive Board Member Frank Elderson warned that physical and nature-related risks are very likely being underestimated by banks.",
+      "source_url": "https://www.esgtoday.com/ecb-climate-nature-risks-very-likely-being-underestimated-by-banks/",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "2026-05-12",
+      "deadline": null,
+      "confidence": 0.85,
+      "detected_at": "2026-05-13T04:00:00Z"
+    },
+    {
+      "id": "esma-2026-05-13-ccp-crisis-guidance",
+      "jurisdiction": "eu",
+      "regulator": "ESMA",
+      "type": "guidance",
+      "title": "ESMA issues guidance on effective use of resolution tools in CCP crisis planning",
+      "summary": "ESMA issued guidance on the effective use of resolution tools in central counterparty (CCP) crisis planning, providing direction on how CCPs should prepare for and manage resolution scenarios to ensure financial stability.",
+      "source_url": "https://www.esma.europa.eu",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "2026-05-13",
+      "deadline": null,
+      "confidence": 0.9,
+      "detected_at": "2026-05-14T07:00:00Z"
+    },
+    {
+      "id": "fsa-japan-2026-05-14-ai-cybersecurity",
+      "jurisdiction": "japan",
+      "regulator": "FSA",
+      "type": "guidance",
+      "title": "Japan FSA: Working Group on Strengthening Cybersecurity Against AI-Related Threats in Financial Sector",
+      "summary": "Japan's FSA convened a working group under the Public-Private Coordination Meeting on Strengthening Cybersecurity Measures in the Financial Sector Against AI-Related Threats, addressing emerging cybersecurity risks from AI technology in financial services.",
+      "source_url": "https://www.fsa.go.jp/en/",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "2026-05-14",
+      "deadline": null,
+      "confidence": 0.85,
+      "detected_at": "2026-05-14T07:00:00Z"
+    },
+    {
+      "id": "poland-mica-2026-05-16-crypto-bill",
+      "jurisdiction": "eu",
+      "regulator": "Polish_Parliament",
+      "type": "final_rule",
+      "title": "Polish Lawmakers Adopt Crypto Regulation Bill Under EU MiCA Framework",
+      "summary": "Polish parliament adopted a crypto regulation bill implementing the EU MiCA framework, prompted by a multi-million dollar fraud scandal. The bill establishes licensing requirements for crypto service providers and consumer protection measures aligned with pan-European standards.",
+      "source_url": "https://www.reuters.com/markets/currencies/polish-lawmakers-adopt-crypto-regulation-amid-multi-million-dollar-fraud-probe-2026-05-16/",
+      "sectors": [
+        "crypto"
+      ],
+      "severity": "high",
+      "effective_date": "",
+      "deadline": null,
+      "confidence": 0.9,
+      "detected_at": "2026-05-16T03:20:00Z"
+    },
+    {
+      "id": "li-boe-2026-05-14-stablecoin-restrictions-rethink",
+      "jurisdiction": "uk",
+      "regulator": "Bank_of_England",
+      "type": "consultation",
+      "title": "Bank of England May Rethink UK Stablecoin Restrictions as TradFi Pushes Back",
+      "summary": "Bank of England Deputy Governor Sarah Breeden indicated the BoE is reconsidering two controversial stablecoin proposals: \u00a320,000/\u00a310m individual/business holding caps and 40% unremunerated central bank reserve requirement. The BoE acknowledged it may have been 'overly conservative' in its liquidity stress assumptions. Consultation responses from UK Finance and AFME reveal regulated financial institutions are divided on the scope of restrictions.",
+      "source_url": "https://www.ledgerinsights.com/bank-of-england-may-rethink-uk-stablecoin-restrictions-as-tradfi-pushes-back/",
+      "sectors": [
+        "crypto",
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "",
+      "deadline": null,
+      "confidence": 0.85,
+      "detected_at": "2026-05-16T03:20:00Z"
+    },
+    {
+      "id": "EU-4c401ff4fdc9",
+      "jurisdiction": "eu",
+      "regulator": "Polish Parliament",
+      "type": "final_rule",
+      "title": "Poland Passes MiCA Implementation Bill to Regulate Crypto Assets",
+      "summary": "Polish lawmakers approved a comprehensive crypto regulation bill implementing the EU's Markets in Crypto-Assets (MiCA) framework. The bill was passed amid a $96M fraud probe involving Zondacrypto exchange and represents the final major EU member state adoption ahead of the MiCA compliance deadline. President had previously vetoed two earlier versions.",
+      "source_url": "https://www.reuters.com/technology/polish-lawmakers-adopt-crypto-regulation-amid-multi-million-dollar-fraud-probe-2026-05-15/",
+      "sectors": [
+        "crypto",
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.95,
+      "detected_at": "2026-05-16T06:58:55Z"
+    },
+    {
+      "id": "EU-ff6fc37426bb",
+      "jurisdiction": "eu",
+      "regulator": "European Parliament",
+      "type": "final_rule",
+      "title": "European Parliament Finalises Securitisation Regulation and CRR Reform Proposals",
+      "summary": "The European Parliament finalised reform proposals for the Securitisation Regulation and Capital Requirements Regulation (CRR) ahead of trilogue negotiations. The reforms aim to reduce regulatory burden for banks while maintaining financial stability, and will reshape how European banks originate and hold securitised assets.",
+      "source_url": "https://www.jdsupra.com/legalnews/european-parliament-finalises-securitisation/",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.9,
+      "detected_at": "2026-05-16T06:58:55Z"
+    },
+    {
+      "id": "fsa-japan-2026-04-03-cybersecurity",
+      "jurisdiction": "japan",
+      "regulator": "FSA",
+      "type": "guidance",
+      "title": "Japan FSA Report on Strengthening Third-Party Cybersecurity Risk Management",
+      "summary": "FSA published research report on strengthening management of third-party cybersecurity risks by financial institutions, providing guidance on vendor risk management and cyber resilience.",
+      "source_url": "https://www.fsa.go.jp/en/news/",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "2026-04-03",
+      "deadline": null,
+      "confidence": 0.85,
+      "detected_at": "2026-05-16T11:08:12Z"
+    },
+    {
+      "id": "mas-2026-05-18-remove-financial-advice",
+      "jurisdiction": "sg",
+      "regulator": "MAS",
+      "type": "final_rule",
+      "title": "MAS Removes Mandatory Financial Advice for Complex Products",
+      "summary": "MAS finalized changes to streamline distribution safeguards for complex financial products, removing the mandatory pre-purchase financial advice requirement for most retail investors purchasing investment-linked policies. The regulation still applies to vulnerable groups aged 62+. MAS also enhanced Product Highlights Sheet (PHS) requirements.",
+      "source_url": "https://www.businesstimes.com.sg/singapore/mas-remove-mandatory-financial-advice-complex-products",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "2026-05-15",
+      "deadline": null,
+      "confidence": 0.95,
+      "detected_at": "2026-05-18T05:28:00Z"
+    },
+    {
+      "id": "60a9839e0d49",
+      "jurisdiction": "japan",
+      "regulator": "FSA",
+      "type": "final_rule",
+      "title": "Japan FSA Shareholding Disclosure Reform - Control-Based Transparency Rules",
+      "summary": "Japan's FSA shareholding disclosure rules changed May 1, 2026, shifting from capital-based to control-based transparency. Part of a twelve-year arc of governance reform.",
+      "source_url": "https://aqmetrics.com/blog/from-capital-to-control-japan",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "2026-05-01",
+      "deadline": null,
+      "confidence": 0.92,
+      "detected_at": "2026-05-18T14:09:55.619083Z"
+    },
+    {
+      "id": "7c1cb110fc65",
+      "jurisdiction": "japan",
+      "regulator": "FSA",
+      "type": "guidance",
+      "title": "Japan FSA Crypto Tax Reform - Tax Rate Reduction from 55% to 20%",
+      "summary": "Japan's FSA plans to cut crypto tax to 20% and classify crypto assets as financial products under FIEA, applying mandatory disclosures and insider-trading rules.",
+      "source_url": "https://apacfinstab.com/blog/japan-fsa-crypto-tax-reform",
+      "sectors": [
+        "crypto",
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": "2026-04-01",
+      "deadline": null,
+      "confidence": 0.85,
+      "detected_at": "2026-05-18T14:09:55.621289Z"
+    },
+    {
+      "id": "EU-2026-05-ed5c40fe",
+      "jurisdiction": "eu",
+      "regulator": "ESMA",
+      "type": "guidance",
+      "title": "ESMA Issues Guidance on Resolution Tools in CCP Crisis Planning",
+      "summary": "ESMA has published a resolution briefing for Central Counterparties (CCPs), providing practical guidance to National Resolution Authorities on how to operationalise the write-down and conversion of instruments tool (WDCI).",
+      "source_url": "https://www.esma.europa.eu/press-news/esma-news/esma-issues-guidance-effective-use-resolution-tools-ccp-crisis-planning",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.9,
+      "detected_at": "2026-05-18T18:15:44.509602Z"
+    },
+    {
+      "id": "EU-2026-05-eb58e5ef",
+      "jurisdiction": "eu",
+      "regulator": "ESMA",
+      "type": "consultation",
+      "title": "ESMA Consults on ESG Ratings Regulation Endorsement Guidelines",
+      "summary": "ESMA is consulting on guidelines on endorsement under the ESG Ratings Regulation, establishing how ESG rating providers operating in the EU should be endorsed.",
+      "source_url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-guidelines-endorsement-under-esg-ratings-regulation",
+      "sectors": [
+        "fintech"
+      ],
+      "severity": "high",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.9,
+      "detected_at": "2026-05-18T18:15:44.509602Z"
+    },
+    {
+      "id": "EU-2026-06-e0081daf3e02",
+      "jurisdiction": "eu",
+      "regulator": "ESMA",
+      "type": "proposed_rule",
+      "title": "ESMA consults on revised guidelines to support smoother allocations and confirmations under T+1",
+      "summary": "ESMA consults on revised guidelines to support smoother allocations and confirmations under T+1 26 May 2026 Post Trading The European Securities and Markets Authority (ESMA), the EU\u2019s financial markets regulator and supervisor, has launched a consultation on the updated guidelines on standardised procedures and messaging protocols. This is part of ESMA\u2019s work to support market participants in preparing for the transition to a T+1 settlem",
+      "source_url": "https://www.esma.europa.eu/press-news/esma-news/esma-consults-revised-guidelines-support-smoother-allocations-and",
+      "sectors": [
+        "fintech",
+        "crypto"
+      ],
+      "severity": "high",
+      "effective_date": null,
+      "deadline": null,
+      "confidence": 0.8,
+      "detected_at": "2026-06-14T10:15:46Z"
+    }
+  ],
+  "count": 59,
+  "total_unfiltered": 118,
+  "generated_at": "2026-06-24T02:11:01.115070Z"
+}
