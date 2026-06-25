@@ -1,7 +1,7 @@
 {
   "name": "Compliance Atlas",
-  "version": "1.0.0",
-  "generated_at": "2026-06-24T02:11:01.115070Z",
+  "version": "2.0.0",
+  "generated_at": "2026-06-25T10:06:28.583683Z",
   "total_findings": 59,
   "total_unfiltered": 118,
   "critical_findings": 16,

@@ -264,6 +264,181 @@ h2 {
   padding: 6rem 2rem;
 }
 
+/* === BRIEFING === */
+#briefing {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem 2rem;
+}
+
+.briefing-player {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.briefing-player::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 4px; height: 100%;
+  background: linear-gradient(180deg, var(--accent), var(--info));
+  opacity: 0.7;
+}
+
+.briefing-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.7rem;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  width: max-content;
+}
+
+.briefing-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  color: var(--fg);
+}
+
+.briefing-sub {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--fg-dim);
+  margin-top: 0.5rem;
+}
+
+#briefing-audio {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+#briefing-audio::-webkit-media-controls-panel {
+  background: var(--bg-card);
+}
+
+/* === JURISDICTIONS === */
+#jurisdictions {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+.jur-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.jur-card {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.jur-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.jur-card.playing {
+  border-color: var(--accent);
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.2);
+}
+
+.jur-cover {
+  height: 140px;
+  overflow: hidden;
+  position: relative;
+}
+
+.jur-cover svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.jur-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.jur-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--fg);
+}
+
+.jur-meta {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--fg-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.jur-meta .jur-count {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: none;
+}
+
+.jur-desc {
+  font-size: 0.85rem;
+  color: var(--fg-dim);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.jur-play {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.9rem;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 6px;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  width: max-content;
+  transition: background 0.15s ease;
+}
+
+.jur-play:hover {
+  background: rgba(16, 185, 129, 0.2);
+}
+
+.jur-play:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
 .kpis {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -514,12 +689,12 @@ Enable JavaScript for the live data preview. The static data above is from the l
 </noscript>
 
 <section id="hero">
-  <div class="brand">COMPLIANCE ATLAS</div>
+  <div class="brand">COMPLIANCE ATLAS <span style="opacity:0.5;margin-left:0.5rem;">v2.0</span></div>
   <h1>5,490 findings. 28 jurisdictions. <b>One screen.</b></h1>
-  <p class="hero-sub">Real-time regulatory monitoring that actually works. No team of 50. No enterprise SaaS. Just one operator, one agent swarm, and a clear view of what changed today.</p>
+  <p class="hero-sub">Real-time regulatory monitoring that actually works. No team of 50. No enterprise SaaS. Just one operator, one agent swarm, and a clear view of what changed today — now with daily audio briefings and per-jurisdiction deep dives.</p>
   <div class="hero-ctas">
     <a href="#dashboard" class="cta">See the live dashboard</a>
-    <a href="#methodology" class="cta secondary">Read the methodology</a>
+    <a href="#briefing" class="cta secondary">Play today's briefing</a>
   </div>
   <div class="live-pill">● LIVE — 190 curated findings across 5 jurisdictions, updated daily</div>
 </section>
@@ -556,6 +731,19 @@ Enable JavaScript for the live data preview. The static data above is from the l
   </div>
 </section>
 
+<section id="briefing">
+  <h2>Daily briefing</h2>
+  <p style="color:var(--fg-dim);max-width:640px;margin:-2rem 0 2rem;">Press play for a 30-second audio rundown of today's top regulatory signals. No team of fifty. No scheduling a call. Just a single voice reading the curated feed.</p>
+  <div class="briefing-player">
+    <div class="briefing-meta">
+      <div class="briefing-pill">● FRESH — Daily 06:00 UTC</div>
+      <div class="briefing-title">Today's curated briefing</div>
+      <div class="briefing-sub" id="briefing-meta">Loading…</div>
+    </div>
+    <audio id="briefing-audio" controls preload="metadata" src="audio/daily-briefing.mp3"></audio>
+  </div>
+</section>
+
 <section id="dashboard">
   <h2>Live dashboard</h2>
 
@@ -587,6 +775,190 @@ Enable JavaScript for the live data preview. The static data above is from the l
   <p style="text-align:center;margin-top:2rem;">
     <a href="https://github.com/nvmmonsalud/compliance-atlas" class="cta secondary">View on GitHub →</a>
   </p>
+</section>
+
+<section id="jurisdictions">
+  <h2>Jurisdictions</h2>
+  <p style="color:var(--fg-dim);max-width:640px;margin:-2rem 0 2.5rem;">Five regulators, monitored continuously. Click any jurisdiction to hear a 30-second audio brief on its current state.</p>
+  <div class="jur-grid" id="jur-grid">
+    <article class="jur-card" data-jur="us-federal" data-audio="audio/jur-us-federal.mp3">
+      <div class="jur-cover us-federal">
+        <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="us-bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#0a0e1a"/>
+              <stop offset="100%" stop-color="#0e1424"/>
+            </linearGradient>
+            <linearGradient id="us-cap" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#10b981" stop-opacity="0.8"/>
+              <stop offset="100%" stop-color="#10b981" stop-opacity="0.1"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="200" fill="url(#us-bg)"/>
+          <g opacity="0.4" stroke="#10b981" stroke-width="0.5" fill="none">
+            <line x1="0" y1="50" x2="400" y2="50"/>
+            <line x1="0" y1="100" x2="400" y2="100"/>
+            <line x1="0" y1="150" x2="400" y2="150"/>
+            <line x1="100" y1="0" x2="100" y2="200"/>
+            <line x1="200" y1="0" x2="200" y2="200"/>
+            <line x1="300" y1="0" x2="300" y2="200"/>
+          </g>
+          <polygon points="200,40 240,90 230,150 170,150 160,90" fill="url(#us-cap)"/>
+          <rect x="180" y="150" width="40" height="20" fill="#10b981" opacity="0.6"/>
+        </svg>
+      </div>
+      <div class="jur-body">
+        <div class="jur-name">US Federal</div>
+        <div class="jur-meta"><span class="jur-count" data-jur="us-federal">—</span> findings</div>
+        <div class="jur-desc">SEC, CFTC, Fed, White House. Crypto market structure, bank capital, AI governance.</div>
+        <button class="jur-play" type="button" aria-label="Play audio brief">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Play brief
+        </button>
+      </div>
+    </article>
+
+    <article class="jur-card" data-jur="eu" data-audio="audio/jur-eu.mp3">
+      <div class="jur-cover eu">
+        <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="eu-bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#0a0e1a"/>
+              <stop offset="100%" stop-color="#0e1424"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="200" fill="url(#eu-bg)"/>
+          <g fill="#10b981" opacity="0.7">
+            <circle cx="200" cy="100" r="50" fill="none" stroke="#10b981" stroke-width="0.5"/>
+            <circle cx="200" cy="60" r="3"/>
+            <circle cx="234" cy="70" r="3"/>
+            <circle cx="240" cy="100" r="3"/>
+            <circle cx="234" cy="130" r="3"/>
+            <circle cx="200" cy="140" r="3"/>
+            <circle cx="166" cy="130" r="3"/>
+            <circle cx="160" cy="100" r="3"/>
+            <circle cx="166" cy="70" r="3"/>
+            <circle cx="172" cy="48" r="3"/>
+            <circle cx="200" cy="42" r="3"/>
+            <circle cx="228" cy="48" r="3"/>
+            <circle cx="245" cy="78" r="3"/>
+          </g>
+        </svg>
+      </div>
+      <div class="jur-body">
+        <div class="jur-name">European Union</div>
+        <div class="jur-meta"><span class="jur-count" data-jur="eu">—</span> findings</div>
+        <div class="jur-desc">EC, ESMA, EBA, EIOPA. AI Act, MiCA, DORA, GDPR cross-border.</div>
+        <button class="jur-play" type="button" aria-label="Play audio brief">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Play brief
+        </button>
+      </div>
+    </article>
+
+    <article class="jur-card" data-jur="uk" data-audio="audio/jur-uk.mp3">
+      <div class="jur-cover uk">
+        <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="uk-bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#0a0e1a"/>
+              <stop offset="100%" stop-color="#0e1424"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="200" fill="url(#uk-bg)"/>
+          <g stroke="#10b981" stroke-width="0.5" fill="none" opacity="0.5">
+            <line x1="0" y1="40" x2="400" y2="40"/>
+            <line x1="0" y1="80" x2="400" y2="80"/>
+            <line x1="0" y1="120" x2="400" y2="120"/>
+            <line x1="0" y1="160" x2="400" y2="160"/>
+          </g>
+          <g fill="none" stroke="#10b981" stroke-width="1.5" opacity="0.85">
+            <rect x="175" y="40" width="50" height="120"/>
+            <polygon points="175,40 200,20 225,40"/>
+            <circle cx="200" cy="80" r="14" fill="#10b981" opacity="0.2"/>
+            <line x1="200" y1="80" x2="200" y2="68" stroke-width="1.5"/>
+            <line x1="200" y1="80" x2="210" y2="84" stroke-width="1.5"/>
+          </g>
+        </svg>
+      </div>
+      <div class="jur-body">
+        <div class="jur-name">United Kingdom</div>
+        <div class="jur-meta"><span class="jur-count" data-jur="uk">—</span> findings</div>
+        <div class="jur-desc">FCA, BoE, PSR, CMA. Consumer Duty, Open Banking, crypto promotions.</div>
+        <button class="jur-play" type="button" aria-label="Play audio brief">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Play brief
+        </button>
+      </div>
+    </article>
+
+    <article class="jur-card" data-jur="sg" data-audio="audio/jur-sg.mp3">
+      <div class="jur-cover sg">
+        <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="sg-bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#0a0e1a"/>
+              <stop offset="100%" stop-color="#0e1424"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="200" fill="url(#sg-bg)"/>
+          <g stroke="#10b981" stroke-width="0.5" fill="none" opacity="0.4">
+            <line x1="0" y1="120" x2="400" y2="120"/>
+            <line x1="0" y1="140" x2="400" y2="140"/>
+            <line x1="0" y1="160" x2="400" y2="160"/>
+          </g>
+          <g fill="#10b981" opacity="0.85">
+            <rect x="120" y="80" width="40" height="80"/>
+            <rect x="170" y="60" width="40" height="100"/>
+            <rect x="220" y="40" width="40" height="120"/>
+            <rect x="270" y="100" width="40" height="60"/>
+            <polygon points="160,80 200,40 240,80" opacity="0.6"/>
+          </g>
+        </svg>
+      </div>
+      <div class="jur-body">
+        <div class="jur-name">Singapore</div>
+        <div class="jur-meta"><span class="jur-count" data-jur="sg">—</span> findings</div>
+        <div class="jur-desc">MAS. Payment Services, VCC framework, digital payment tokens.</div>
+        <button class="jur-play" type="button" aria-label="Play audio brief">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Play brief
+        </button>
+      </div>
+    </article>
+
+    <article class="jur-card" data-jur="japan" data-audio="audio/jur-japan.mp3">
+      <div class="jur-cover japan">
+        <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <linearGradient id="jp-bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#0a0e1a"/>
+              <stop offset="100%" stop-color="#0e1424"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="200" fill="url(#jp-bg)"/>
+          <g fill="#10b981" opacity="0.5">
+            <circle cx="350" cy="50" r="22" opacity="0.15"/>
+          </g>
+          <path d="M 0 160 L 80 130 L 140 145 L 200 110 L 260 130 L 320 105 L 400 125 L 400 200 L 0 200 Z" fill="#10b981" opacity="0.4"/>
+          <path d="M 0 175 L 100 155 L 180 170 L 280 145 L 400 165 L 400 200 L 0 200 Z" fill="#10b981" opacity="0.25"/>
+          <g stroke="#10b981" stroke-width="1.5" fill="none" opacity="0.85">
+            <rect x="180" y="140" width="40" height="20"/>
+            <rect x="195" y="125" width="10" height="15"/>
+          </g>
+        </svg>
+      </div>
+      <div class="jur-body">
+        <div class="jur-name">Japan</div>
+        <div class="jur-meta"><span class="jur-count" data-jur="japan">—</span> findings</div>
+        <div class="jur-desc">FSA, BoJ. Stablecoin trust regime, crypto margin caps, J-REIT disclosure.</div>
+        <button class="jur-play" type="button" aria-label="Play audio brief">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Play brief
+        </button>
+      </div>
+    </article>
+  </div>
 </section>
 
 <section id="methodology">
@@ -722,6 +1094,25 @@ Enable JavaScript for the live data preview. The static data above is from the l
         document.getElementById('kpi-total').textContent = s.total_findings.toLocaleString();
         document.getElementById('kpi-critical').textContent = s.critical_findings.toLocaleString();
         document.getElementById('kpi-jurs').textContent = (s.jurisdictions || []).length;
+
+        // Update briefing meta
+        const meta = document.getElementById('briefing-meta');
+        if (meta && s.generated_at) {
+          const d = new Date(s.generated_at);
+          meta.textContent = d.toLocaleString('en-US', {
+            month: 'short', day: 'numeric', year: 'numeric',
+            hour: '2-digit', minute: '2-digit', timeZoneName: 'short'
+          }) + ' · ' + s.critical_findings + ' critical · ' + s.high_findings + ' high';
+        }
+
+        // Populate jurisdiction counts
+        if (s.jurisdiction_counts) {
+          document.querySelectorAll('.jur-count').forEach(function(el) {
+            const jur = el.getAttribute('data-jur');
+            const count = s.jurisdiction_counts[jur];
+            if (count !== undefined) el.textContent = count;
+          });
+        }
       })
       .catch(function() {});
 
@@ -743,6 +1134,40 @@ Enable JavaScript for the live data preview. The static data above is from the l
       })
       .catch(function() {});
   }
+
+  // === Per-jurisdiction audio players ===
+  document.querySelectorAll('.jur-card').forEach(function(card) {
+    const btn = card.querySelector('.jur-play');
+    const audioSrc = card.getAttribute('data-audio');
+    if (!btn || !audioSrc) return;
+    let audio = null;
+    btn.addEventListener('click', function() {
+      // Stop any other playing
+      document.querySelectorAll('.jur-card.playing').forEach(function(c) {
+        if (c !== card) c.classList.remove('playing');
+      });
+      if (!audio) {
+        audio = new Audio(audioSrc);
+        audio.addEventListener('ended', function() {
+          card.classList.remove('playing');
+          btn.innerHTML = '<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Play brief';
+        });
+      }
+      if (card.classList.contains('playing')) {
+        audio.pause();
+        audio.currentTime = 0;
+        card.classList.remove('playing');
+        btn.innerHTML = '<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Play brief';
+      } else {
+        card.classList.add('playing');
+        btn.innerHTML = '<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M6 4h4v16H6zm8 0h4v16h-4z"/></svg> Pause';
+        audio.play().catch(function() {
+          card.classList.remove('playing');
+          btn.innerHTML = '<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Play brief';
+        });
+      }
+    });
+  });
 
   // Initial fetch + 60s refresh
   fetchData();
