@@ -13,9 +13,10 @@ import os
 import time
 from flask import Flask, jsonify, send_from_directory, request
 
-app = Flask(__name__, static_folder='public', static_url_path='')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+app = Flask(__name__, static_folder=os.path.join(BASE_DIR, 'public'), static_url_path='')
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), 'data', 'public')
+DATA_DIR = os.path.join(BASE_DIR, 'data', 'public')
 START_TIME = time.time()
 _DATA = {}
 
@@ -34,19 +35,22 @@ def load_data():
 
 
 # === Static ===
+PUBLIC_DIR = os.path.join(BASE_DIR, 'public')
+
+
 @app.route('/')
 def index():
-    return send_from_directory('public', 'index.html')
+    return send_from_directory(PUBLIC_DIR, 'index.html')
 
 
 @app.route('/og.png')
 def og():
-    return send_from_directory('public', 'og.png')
+    return send_from_directory(PUBLIC_DIR, 'og.png')
 
 
 @app.route('/REEL.md')
 def reel():
-    return send_from_directory('public', 'REEL.md')
+    return send_from_directory(PUBLIC_DIR, 'REEL.md')
 
 
 # === API ===
