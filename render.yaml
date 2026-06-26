@@ -5,7 +5,7 @@ services:
     plan: free
     # Build command runs the curator against the bundled sample feed
     # (Replace with the real feed URL when going to production)
-    buildCommand: "cp -n data/sample-feed.jsonl data/regulatory-feed.jsonl 2>/dev/null || true; python3 curate.py"
+    buildCommand: "pip install --upgrade pip && pip install -r requirements.txt && cp -n data/sample-feed.jsonl data/regulatory-feed.jsonl 2>/dev/null || true; python3 curate.py"
     startCommand: "gunicorn api_combined:app --bind 0.0.0.0:$PORT"
     healthCheckPath: /api/health
     autoDeploy: true
