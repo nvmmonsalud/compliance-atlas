@@ -58,7 +58,7 @@ def reel():
 def manifest():
     return jsonify({
         'name': 'Compliance Atlas Public API',
-        'version': '1.0.0',
+        'version': '2.0.0',
         'endpoints': ['/api/summary', '/api/findings', '/api/conflicts', '/api/arbitrage', '/api/sectors', '/api/health'],
     })
 
@@ -126,7 +126,7 @@ def api_health():
         'status': 'ok',
         'uptime_seconds': int(time.time() - START_TIME),
         'findings_loaded': findings_loaded,
-        'version': '1.0.0',
+        'version': '2.0.0',
     })
 
 
