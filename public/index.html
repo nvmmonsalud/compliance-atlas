@@ -134,6 +134,26 @@ h1 b {
 .cta:hover { transform: translateY(-1px); box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4); }
 .cta.secondary { background: transparent; color: var(--fg); border: 1px solid var(--border); }
 .cta.secondary:hover { border-color: var(--accent); color: var(--accent); }
+.cta.secondary.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  color: var(--fg-dim);
+  border-color: var(--border);
+}
+.cta.secondary.disabled:hover {
+  border-color: var(--border);
+  color: var(--fg-dim);
+  transform: none;
+  box-shadow: none;
+}
+.cta.secondary.disabled small {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  margin-left: 0.4rem;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+}
 
 .live-pill {
   display: inline-flex;
@@ -995,7 +1015,7 @@ Enable JavaScript for the live data preview. The static data above is from the l
   <h2>Want this for your business?</h2>
   <p>Compliance Atlas runs as a private agent swarm. Fork the repo, point it at your sector, get your own real-time view. No team of fifty required.</p>
   <a href="https://github.com/nvmmonsalud/compliance-atlas" class="cta">View on GitHub</a>
-  <a href="#" class="cta secondary" onclick="event.preventDefault();alert('Writeup coming soon — follow the repo for updates.');">Read the technical writeup</a>
+  <span class="cta secondary disabled" title="Writeup coming soon — follow the repo for updates" aria-disabled="true">Read the technical writeup <small>soon</small></span>
 </section>
 
 <footer>
