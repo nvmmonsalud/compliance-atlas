@@ -1,7 +1,7 @@
 services:
   - type: web
     name: compliance-atlas
-    env: python
+    runtime: python
     plan: free
     # Build command runs the curator against the bundled sample feed
     # (Replace with the real feed URL when going to production)
