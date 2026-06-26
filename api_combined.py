@@ -130,18 +130,20 @@ def api_health():
     })
 
 
-# === CORS — explicit preflight for the public API ===
+# === CORS — global preflight + per-response headers ===
+@app.before_request
+def handle_preflight():
+    # RFC 7231: a successful preflight has no body and uses 204.
+    if request.method == 'OPTIONS':
+        return ('', 204)
+
+
 @app.after_request
 def add_cors(response):
     response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Access-Control-Allow-Methods'] = 'GET, OPTIONS'
     response.headers['Access-Control-Allow-Headers'] = 'Content-Type'
     return response
-
-
-@app.route('/api/<path:_>', methods=['OPTIONS'])
-def options(_):
-    return ('', 204)
 
 
 load_data()
