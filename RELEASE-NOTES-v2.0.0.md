@@ -90,3 +90,22 @@ This release was shipped using the full Hermes agent stack:
 ## Credits
 
 Built by NVM · Powered by a RegSwarm agent pipeline · Audio: edge-tts (free, MIT) · Data refreshed daily at 06:00 UTC
+
+---
+
+## 🌊 Live status
+
+- **Production URL**: https://compliance-atlas.onrender.com/
+- **Deployed on**: Render (free web service, Flask + gunicorn)
+- **Status**: live, all 8 endpoints returning 200, audio + Reel assets serving
+- **Launched**: June 26, 2026 (JST)
+
+## Deploy history (3 fixes, then green)
+
+| # | Commit | Issue | Fix |
+|---|---|---|---|
+| 1 | `dac2364` | Render Blueprint sync rejected: deprecated `env` field | `env: python` → `runtime: python` |
+| 2 | `5bbf763` | Build exit 127: `python` not found | `python` → `python3` |
+| 3 | `4b6c162` | Start exit 127: `gunicorn` not found | Add `pip install -r requirements.txt` to buildCommand |
+
+All three were diagnosed without Render API access by reproducing the failure locally (clean venv + exact buildCommand + gunicorn boot + curl).

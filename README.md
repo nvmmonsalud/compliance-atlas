@@ -5,6 +5,8 @@
 
 ![Demo](public/og.png)
 
+🌊 **[LIVE → compliance-atlas.onrender.com](https://compliance-atlas.onrender.com/)** — v2.0.0 deployed on Render, all systems green.
+
 ## What this is
 
 A public showcase of the RegSwarm compliance monitoring pipeline. The internal
@@ -89,9 +91,10 @@ gunicorn api_combined:app --bind 0.0.0.0:8080
 
 All endpoints CORS-open. No auth. No rate limit. By design.
 
-## Live demo
+## 🌊 Live demo
 
-- **Repo**: <https://github.com/nvmmonsalud/compliance-atlas>
+👉 **https://compliance-atlas.onrender.com/**
+
 - **API example**: `curl https://compliance-atlas.onrender.com/api/summary`
 
 > Deploy via Render: import this repo, Render auto-detects `render.yaml` and deploys in ~2 minutes.
