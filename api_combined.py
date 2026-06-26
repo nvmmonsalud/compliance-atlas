@@ -146,6 +146,37 @@ def add_cors(response):
     return response
 
 
+# === Security headers — minimum sane defaults for a public web app ===
+# CSP is open by design: the public Atlas needs to load same-origin assets
+# and inline SVG cover art, but no third-party scripts, no eval, no frames.
+# Loosen only if you intentionally add a CDN; don't loosen for "future flexibility".
+@app.after_request
+def add_security_headers(response):
+    response.headers['X-Content-Type-Options'] = 'nosniff'
+    response.headers['X-Frame-Options'] = 'DENY'
+    response.headers['Referrer-Policy'] = 'strict-origin-when-cross-origin'
+    response.headers['Permissions-Policy'] = 'geolocation=(), microphone=(), camera=(), payment=()'
+    # HSTS: 1 year, include subdomains, eligible for preload. The site is HTTPS-only
+    # so this just tells the browser to never fall back to HTTP for the next 12 months.
+    response.headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'
+    # CSP: same-origin everything, no inline scripts (the page has no inline JS),
+    # no eval, no frames, no third-party fonts/images. Tighten further if you
+    # add analytics — but never relax script-src to allowlist public CDNs.
+    response.headers['Content-Security-Policy'] = (
+        "default-src 'self'; "
+        "img-src 'self' data:; "
+        "media-src 'self'; "
+        "script-src 'self'; "
+        "style-src 'self' 'unsafe-inline'; "
+        "font-src 'self'; "
+        "connect-src 'self'; "
+        "frame-ancestors 'none'; "
+        "base-uri 'self'; "
+        "form-action 'self'"
+    )
+    return response
+
+
 load_data()
 print(f'🔓 Compliance Atlas API ready ({sum(1 for v in _DATA.values() if v)}/5 data files loaded)')
 
